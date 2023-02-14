@@ -7,7 +7,7 @@ public class Books {
     private int photo;
     private Boolean status;
     private int id;
-    public Books(int id, String name, String uthor, String genre, int photo, Boolean status){
+    public Books(int id, String name, String author, String genre, int photo, Boolean status){
         this.id = id;
         this.name = name;
         this.author = author;

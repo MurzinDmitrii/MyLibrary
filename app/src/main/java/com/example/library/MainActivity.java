@@ -9,6 +9,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
+import android.os.AsyncTask;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -25,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 imageView.setImageResource(R.drawable.img_light);
                 break;
         }
+
+
         Button button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
